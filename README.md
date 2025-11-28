@@ -44,7 +44,7 @@ You can get the Complete Source Code (main.py) which includes the full GUI imple
 
 It is fully commented and ready to be customized for your own automation projects.
 
-👉 Download on Gumroad ($29): [[link](https://pokhts.gumroad.com/l/python-mqtt-logger)]
+👉 Download on Gumroad ($9.9): [[link](https://pokhts.gumroad.com/l/python-mqtt-logger)]
 
 (Includes: main.py, requirements.txt, and Setup Guide)
 
